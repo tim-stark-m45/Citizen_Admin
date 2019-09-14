@@ -1,0 +1,51 @@
+{
+  "defaultAssembly": "MyCity_Admin",
+  "components": [
+    { "type": "MyCity_Admin.ViewModels.MainWindowViewModel" },
+    { "type": "MyCity_Admin.ViewModels.InfrastructureListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.InfrastructureInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.ProblemsViewModel" },
+    { "type": "MyCity_Admin.ViewModels.BuildingListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.GovernmentListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.HelloViewModel" },
+    { "type": "MyCity_Admin.ViewModels.HospitalsListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.IdeaListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.ImportantViewModel" },
+    { "type": "MyCity_Admin.ViewModels.NewsViewModel" },
+    { "type": "MyCity_Admin.ViewModels.PublicTransportListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.RoadListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.SecurityListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.Trade_AdvertisingListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.YardListViewModel" },
+    { "type": "MyCity_Admin.ViewModels.BuildingInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.GovernmentInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.HospitalsInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.IdeaInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.PublicTransportInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.RoadInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.SecurityInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.Trade_AdvertisingInfoViewModel" },
+    { "type": "MyCity_Admin.ViewModels.YardInfoViewModel" },
+    {
+      "type": "MyCity_Admin.Models.AppDbContext",
+      "instanceScope": "single-instance"
+    },
+    {
+      "type": "MyCity_Admin.Services.MessageService",
+      "services": [
+        {
+          "type": "MyCity_Admin.Services.IMessageService"
+        }
+      ]
+    },
+    {
+      "type": "MyCity_Admin.Services.NavigationService",
+      "services": [
+        {
+          "type": "MyCity_Admin.Services.INavigationService"
+        }
+      ],
+      "instanceScope": "single-instance"
+    }
+  ]
+}
